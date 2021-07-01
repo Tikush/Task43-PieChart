@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Task43_TikoJanikashvili" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="34" translatesAutoresizingMaskIntoConstraints="NO" id="UX8-zP-Fdf">
+                                <rect key="frame" x="24" y="616" width="366" height="222"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cNK-Ks-PXu">
+                                        <rect key="frame" x="-2" y="0.0" width="370" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.30256883490000003" green="0.3602993028" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="mooonCoffe:" destination="BYZ-38-t0r" eventType="valueChanged" id="u7g-iw-5mi"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="vtI-9Z-U1H">
+                                        <rect key="frame" x="-2" y="64" width="370" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.84882849449999997" green="0.33197812609999999" blue="0.18840039389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <connections>
+                                            <action selector="bananaCoffee:" destination="BYZ-38-t0r" eventType="valueChanged" id="0wT-cI-Ck1"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="0uJ-Jt-vph">
+                                        <rect key="frame" x="-2" y="128" width="370" height="31"/>
+                                        <color key="minimumTrackTintColor" systemColor="systemYellowColor"/>
+                                        <connections>
+                                            <action selector="bobBakery:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Ed-ws-5nQ"/>
+                                        </connections>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="20" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="MQQ-vU-ceH">
+                                        <rect key="frame" x="-2" y="192" width="370" height="31"/>
+                                        <color key="minimumTrackTintColor" red="0.23137254900000001" green="0.63137254899999995" blue="0.68627450980000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="easternCafe:" destination="BYZ-38-t0r" eventType="valueChanged" id="G7w-jK-QAH"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="UX8-zP-Fdf" secondAttribute="trailing" constant="24" id="JYZ-Cs-ZGk"/>
+                            <constraint firstItem="UX8-zP-Fdf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="qYO-tw-HzL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UX8-zP-Fdf" secondAttribute="bottom" constant="24" id="wQY-YM-ROw"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="42" y="88"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
